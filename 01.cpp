@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 
 enum class months
@@ -26,57 +26,57 @@ int main(int argc, char** argv)
 
 	while (true)
 	{
-		std::cout << "Ââåäèòå íîìåð ìåñÿöà: ";
+		std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ Ð¼ÐµÑÑÑ†Ð°: ";
 		std::cin >> month_number;
 
 		if (month_number == 0)
 		{
-			std::cout << "Äî ñâèäàíèÿ";
+			std::cout << "Ð”Ð¾ ÑÐ²Ð¸Ð´Ð°Ð½Ð¸Ñ" << '\n';
 			break;
 		}
 		else if (month_number < 0 || month_number > 12)
 		{
-			std::cout << "Íåïðàâèëüíûé íîìåð!" << '\n';
+			std::cout << "ÐÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ñ‹Ð¹ Ð½Ð¾Ð¼ÐµÑ€!" << '\n';
 			continue;
 		}
 
 		switch (month_number)
 		{
 		case static_cast<int>(months::January):
-			std::cout << "ßíâàðü" << '\n';
+			std::cout << "Ð¯Ð½Ð²Ð°Ñ€ÑŒ" << '\n';
 			break;
 		case static_cast<int>(months::February):
-			std::cout << "Ôåâðàëü" << '\n';
+			std::cout << "Ð¤ÐµÐ²Ñ€Ð°Ð»ÑŒ" << '\n';
 			break;
 		case static_cast<int>(months::March):
-			std::cout << "Ìàðò" << '\n';
+			std::cout << "ÐœÐ°Ñ€Ñ‚" << '\n';
 			break;
 		case static_cast<int>(months::April):
-			std::cout << "Àïðåëü" << '\n';
+			std::cout << "ÐÐ¿Ñ€ÐµÐ»ÑŒ" << '\n';
 			break;
 		case static_cast<int>(months::May):
-			std::cout << "Ìàé" << '\n';
+			std::cout << "ÐœÐ°Ð¹" << '\n';
 			break;
 		case static_cast<int>(months::June):
-			std::cout << "Èþíü" << '\n';
+			std::cout << "Ð˜ÑŽÐ½ÑŒ" << '\n';
 			break;
 		case static_cast<int>(months::July):
-			std::cout << "Èþëü" << '\n';
+			std::cout << "Ð˜ÑŽÐ»ÑŒ" << '\n';
 			break;
 		case static_cast<int>(months::August):
-			std::cout << "Àâãóñò" << '\n';
+			std::cout << "ÐÐ²Ð³ÑƒÑÑ‚" << '\n';
 			break;
 		case static_cast<int>(months::September):
-			std::cout << "Ñåíòÿáðü" << '\n';
+			std::cout << "Ð¡ÐµÐ½Ñ‚ÑÐ±Ñ€ÑŒ" << '\n';
 			break;
 		case static_cast<int>(months::October):
-			std::cout << "Îêòÿáðü" << '\n';
+			std::cout << "ÐžÐºÑ‚ÑÐ±Ñ€ÑŒ" << '\n';
 			break;
 		case static_cast<int>(months::November):
-			std::cout << "Íîÿáðü" << '\n';
+			std::cout << "ÐÐ¾ÑÐ±Ñ€ÑŒ" << '\n';
 			break;
 		case static_cast<int>(months::December):
-			std::cout << "Äåêàáðü" << '\n';
+			std::cout << "Ð”ÐµÐºÐ°Ð±Ñ€ÑŒ" << '\n';
 			break;
 		}
 	}
