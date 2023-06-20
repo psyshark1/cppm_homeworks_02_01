@@ -40,42 +40,42 @@ int main(int argc, char** argv)
 			continue;
 		}
 
-		switch (month_number)
+		switch (static_cast<months>(month_number))
 		{
-		case static_cast<int>(months::January):
+		case months::January:
 			std::cout << "Январь" << '\n';
 			break;
-		case static_cast<int>(months::February):
+		case months::February:
 			std::cout << "Февраль" << '\n';
 			break;
-		case static_cast<int>(months::March):
+		case months::March:
 			std::cout << "Март" << '\n';
 			break;
-		case static_cast<int>(months::April):
+		case months::April:
 			std::cout << "Апрель" << '\n';
 			break;
-		case static_cast<int>(months::May):
+		case months::May:
 			std::cout << "Май" << '\n';
 			break;
-		case static_cast<int>(months::June):
+		case months::June:
 			std::cout << "Июнь" << '\n';
 			break;
-		case static_cast<int>(months::July):
+		case months::July:
 			std::cout << "Июль" << '\n';
 			break;
-		case static_cast<int>(months::August):
+		case months::August:
 			std::cout << "Август" << '\n';
 			break;
-		case static_cast<int>(months::September):
+		case months::September:
 			std::cout << "Сентябрь" << '\n';
 			break;
-		case static_cast<int>(months::October):
+		case months::October:
 			std::cout << "Октябрь" << '\n';
 			break;
-		case static_cast<int>(months::November):
+		case months::November:
 			std::cout << "Ноябрь" << '\n';
 			break;
-		case static_cast<int>(months::December):
+		case months::December:
 			std::cout << "Декабрь" << '\n';
 			break;
 		}
